@@ -27,4 +27,9 @@ public class SeleniumConfig {
         }
         return "";
     }
+
+    public WebDriver getDriver() {
+        return driver;
+    }
+
 }
