@@ -1,8 +1,6 @@
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -22,7 +20,7 @@ public class SeleniumConfig {
     }
 
     static private String findFile(String filename) {
-        String paths[] = {"", "bin/", "target/classess"};
+        String[] paths = {"", "bin/", "target/classess"};
         for (String path : paths) {
             if (new File(path + filename).exists())
                 return path + filename;
