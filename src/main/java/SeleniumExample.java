@@ -52,4 +52,10 @@ public class SeleniumExample {
                 .getPageSource()
                 .contains("Hey ! I'm Eugen");
     }
+
+    public void getAboutBaeldungPage() {
+        closeOverlay();
+        clickAboutLink();
+        clickAboutUsLink();
+    }
 }
