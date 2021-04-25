@@ -16,11 +16,11 @@ public class SeleniumConfig {
     }
 
     static {
-        System.setProperty("webdriver.gecko.driver", findFile("geckodriver.mac"));
+        System.setProperty("webdriver.gecko.driver", findFile("geckodriver"));
     }
 
     static private String findFile(String filename) {
-        String[] paths = {"", "bin/", "target/classess"};
+        String[] paths = {"", "bin/", "target/classes", "src/main/resources/"};
         for (String path : paths) {
             if (new File(path + filename).exists())
                 return path + filename;

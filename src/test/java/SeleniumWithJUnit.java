@@ -1,7 +1,8 @@
-import org.junit.AfterClass;
+import static org.junit.Assert.*;
 import org.junit.BeforeClass;
+import org.junit.AfterClass;
 import org.junit.Test;
-import org.junit.Assert.*
+
 
 public class SeleniumWithJUnit {
     private static SeleniumExample seleniumExample;
