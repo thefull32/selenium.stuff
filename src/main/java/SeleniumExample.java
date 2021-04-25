@@ -43,7 +43,7 @@ public class SeleniumExample {
 
     private void clickAboutUsLink() {
         WebElement element = this.config.getDriver()
-                .findElement(By.partialLinkText("About Baeeldung."));
+                .findElement(By.partialLinkText("About Baeldung."));
         element.click();
     }
 
